@@ -33,5 +33,5 @@ jobs:
         run: npm install --global surge
       
       - name: Run surge
-        run: surge ./build soggy-agreement.surge.sh --token  08785260d4f5a756c6af6161f48482a6
+        run: surge ./build soggy-agreement.surge.sh --token  ${{ secrets.SURGE_TOKEN }}
       
